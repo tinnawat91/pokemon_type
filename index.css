@@ -1,0 +1,221 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+td {
+    white-space: nowrap;
+}
+th, td {
+padding: 10px;
+text-align: center;
+font-family: "Fira Sans","Trebuchet MS",Ubuntu,Helvetica,Arial,sans-serif;
+border: 1px solid rgb(0, 0, 0, .2);
+border-radius: 4px;
+text-transform: uppercase;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, .7);
+font-weight: normal;
+transition: opacity .4s;
+box-sizing: border-box;
+}  
+img {
+/* width: 56px; 
+height: 42px; */
+width: 64px;
+height: 64px;
+margin: auto;
+}
+.image-count {
+    margin-top: 10px;
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: auto;
+}
+.image-column {
+    /* display: inline-block; */
+    /* vertical-align:top; */
+    /* border: 1px solid blue; */
+    margin: auto;
+}
+
+.image-column img {
+    display: block;
+    /* border: 1px solid red; */
+
+    /* width:auto;
+    height:auto; */
+}
+.box {
+    width: 66px;   /* You can adjust the width as needed */
+    display: inline-block;
+    /* margin-right: 10px;
+    margin-bottom: 4px;
+    margin: 0 5px; */
+    margin-bottom: 10px;
+    color: #fff;
+    border: 1px solid rgb(0, 0, 0, .2);
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .7);
+    font-weight: normal;
+    font-size: .75rem;
+    line-height: 1.5rem;
+    text-align: center;
+    transition: opacity .4s;
+    box-sizing: border-box;
+    font-family: "Fira Sans","Trebuchet MS",Ubuntu,Helvetica,Arial,sans-serif;
+}
+
+td[data-rowtype],
+th[data-columntype] {
+    color: #fff;
+    border: 1px solid rgb(0, 0, 0, .2);
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .7);
+    font-weight: normal;
+    text-align: center;
+    transition: opacity .4s;
+    box-sizing: border-box;
+    font-family: "Fira Sans","Trebuchet MS",Ubuntu,Helvetica,Arial,sans-serif;
+}
+
+td[data-rowtype="Normal"],
+th[data-columntype="Normal"],
+.box.row-Normal,
+.box.column-Normal {
+    background-color: #aa9;  /* Change the color to your preference */
+}
+td[data-rowtype="Fire"],
+th[data-columntype="Fire"],
+.box.row-Fire,
+.box.column-Fire {
+    background-color: #f42;  /* Change the color to your preference */
+}
+td[data-rowtype="Water"],
+th[data-columntype="Water"],
+.box.row-Water,
+.box.column-Water {
+    background-color: #39f;  /* Change the color to your preference */
+}
+td[data-rowtype="Electric"],
+th[data-columntype="Electric"],
+.box.row-Electric,
+.box.column-Electric {
+    background-color: #fc3;  /* Change the color to your preference */
+}
+td[data-rowtype="Grass"],
+th[data-columntype="Grass"],
+.box.row-Grass,
+.box.column-Grass {
+    background-color: #7c5;  /* Change the color to your preference */
+}
+td[data-rowtype="Ice"],
+th[data-columntype="Ice"],
+.box.row-Ice,
+.box.column-Ice {
+    background-color: #6cf;  /* Change the color to your preference */
+}
+td[data-rowtype="Fighting"],
+th[data-columntype="Fighting"],
+.box.row-Fighting,
+.box.column-Fighting {
+    background-color: #b54;  /* Change the color to your preference */
+}
+td[data-rowtype="Poison"],
+th[data-columntype="Poison"],
+.box.row-Poison,
+.box.column-Poison {
+    background-color: #a59;  /* Change the color to your preference */
+}
+td[data-rowtype="Ground"],
+th[data-columntype="Ground"],
+.box.row-Ground,
+.box.column-Ground {
+    background-color: #db5;  /* Change the color to your preference */
+}
+td[data-rowtype="Flying"],
+th[data-columntype="Flying"],
+.box.row-Flying,
+.box.column-Flying {
+    background-color: #89f;  /* Change the color to your preference */
+}
+td[data-rowtype="Psychic"],
+th[data-columntype="Psychic"],
+.box.row-Psychic,
+.box.column-Psychic {
+    background-color: #f59;  /* Change the color to your preference */
+}
+td[data-rowtype="Bug"],
+th[data-columntype="Bug"],
+.box.row-Bug,
+.box.column-Bug {
+    background-color: #ab2;  /* Change the color to your preference */
+}
+td[data-rowtype="Rock"],
+th[data-columntype="Rock"],
+.box.row-Rock,
+.box.column-Rock {
+    background-color: #ba6;  /* Change the color to your preference */
+}
+td[data-rowtype="Ghost"],
+th[data-columntype="Ghost"],
+.box.row-Ghost,
+.box.column-Ghost {
+    background-color: #66b;  /* Change the color to your preference */
+}
+td[data-rowtype="Dragon"],
+th[data-columntype="Dragon"],
+.box.row-Dragon,
+.box.column-Dragon {
+    background-color: #76e;  /* Change the color to your preference */
+}
+td[data-rowtype="Dark"],
+th[data-columntype="Dark"],
+.box.row-Dark,
+.box.column-Dark {
+    background-color: #754;  /* Change the color to your preference */
+}
+td[data-rowtype="Steel"],
+th[data-columntype="Steel"],
+.box.row-Steel,
+.box.column-Steel {
+    background-color: #aab;  /* Change the color to your preference */
+}
+td[data-rowtype="Fairy"],
+th[data-columntype="Fairy"],
+.box.row-Fairy,
+.box.column-Fairy {
+    background-color: #e9e;  /* Change the color to your preference */
+}
+.tooltip {
+    display: block;
+    visibility: hidden;
+    /* width: auto; */
+    text-align: center;
+    background-color: #555;
+    color: #fff;
+    padding: 5px ;
+    border-radius: 6px;
+    position:relative;
+    z-index: 1;
+    /* margin-left: -50px;
+    margin-top: 5px; */
+}
+.tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: 100%; /* Arrow will appear at the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #555 transparent;
+}
+img:hover + .tooltip {
+    visibility: visible;
+    opacity: 1;
+    /* display: none; */
+}
+
